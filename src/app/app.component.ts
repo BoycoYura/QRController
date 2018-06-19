@@ -25,6 +25,8 @@ export class MyApp {
     this.pages = [
       { title: 'Сканировать QR код', component: QrScanComponent },
       { title: 'Проверка по номеру', component: NumberScanComponent },
+      { title: 'История', component: HistoryListComponent },
+      { title: 'Профиль', component: ProfileComponent },
     ];
   }
 

@@ -15,6 +15,8 @@ export class QrScanComponent {
 
   text: string;
 
+  pages: Array<{title: string, component: any}>;
+
   constructor(public navCtrl: NavController) {
     console.log('Hello QrScanComponent Component');
     this.text = 'Hello World';
@@ -27,7 +29,4 @@ export class QrScanComponent {
   toQRPage(){
   	this.navCtrl.push(QrScanComponent);
   }
-
-
-
 }
