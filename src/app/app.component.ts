@@ -2,9 +2,11 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { QrScanComponent } from '../components/qr-scan/qr-scan';
+import { NumberScanComponent } from '../components/number-scan/number-scan';
+import { HistoryListComponent } from '../components/history-list/history-list';
+import { ProfileComponent} from '../components/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +14,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = QrScanComponent;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,10 +23,9 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Сканировать QR код', component: QrScanComponent },
+      { title: 'Проверка по номеру', component: NumberScanComponent },
     ];
-
   }
 
   initializeApp() {

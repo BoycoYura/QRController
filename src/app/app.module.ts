@@ -5,14 +5,22 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { QrScanComponent } from '../components/qr-scan/qr-scan';
+import { NumberScanComponent } from '../components/number-scan/number-scan';
+import { HistoryListComponent } from '../components/history-list/history-list';
+import { ProfileComponent} from '../components/profile/profile';
+import { NavController } from 'ionic-angular';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    QrScanComponent,
+    NumberScanComponent,
+    HistoryListComponent,
+    ProfileComponent,
     ListPage
   ],
   imports: [
@@ -22,7 +30,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    QrScanComponent,
     HomePage,
+    NumberScanComponent,
+    HistoryListComponent,
+    ProfileComponent,
     ListPage
   ],
   providers: [

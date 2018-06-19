@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Number Scan component</ion-title>
+  </ion-navbar>
+  <div class="tabs">
+    <a href="" (click)="toQRPage()">QR код</a>
+    <a href="" (click)="toNumberPage()">Номер кода</a>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div>
+    <form action="">
+      <ion-list>
+        <ion-item>
+          <ion-input class="number-field" placeholder="Введите номер:" type="text" value=""></ion-input>
+        </ion-item>
+      </ion-list> 
+      <button ion-button full type="submit">Найти</button>
+    </form> 
+  </div>
+</ion-content>
+
+
+<!-- Generated template for the QrScanComponent component -->
+

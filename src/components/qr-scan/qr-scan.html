@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Проверка билета</ion-title>
+  </ion-navbar>
+  <div class="tabs">
+    <a href="" (click)="toQRPage()">QR код</a>
+    <a href="" (click)="toNumberPage()">Номер кода</a>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="code-qr">
+    <i class="ion-ios-checkmark-empty" ng-show="true"></i> <!-- if true show this icon -->
+    <i class="ion-ios-close-empty" ng-show="false"></i> <!-- if false show this icon -->
+  </div>
+  <h4 class="check-success" ng-show="true">Готово!</h4> <!-- if true show this title -->
+  <h4 class="check-error" ng-show="false">Билет не найден!</h4> <!-- if false show this title -->
+
+  <button class="button button-success button-balanced ink" ng-show="false">Начать сканирование</button> <!-- if you want scan click this button -->
+  <button class="button button-success button-balanced ink" ng-show="true">Ok</button> <!-- if scanner true show this button -->
+  <button class="button button-success button-balanced ink" ng-show="false">Закрыть</button> <!-- if scanner false show this button -->
+  <button class="button button-success button-balanced ink" ng-show="false">Проверка по номеру</button> <!-- if scanner false show this button -->
+</ion-content>
+
+
+<!-- Generated template for the QrScanComponent component -->
+

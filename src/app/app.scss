@@ -1,16 +1,154 @@
-// http://ionicframework.com/docs/theming/
+.toolbar-background-md{
+    background-color: rgb(0, 36, 62);
+}
 
+.bar-buttons,.bar-buttons:hover{
+    color: white!important;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.toolbar-title-md{
+    color: white;
+}
+
+/* Empty. Add your own CSS if you like */
+.bar-stable.bar.bar-header {
+    background-color: #00243e;
+    color: #fff;
+  }
+  .title.title-left.header-item {
+    color: #fff;
+  }
+  
+  .bg-menu {
+    background-color: #00243e;
+  }
+  .bg-menu .item,
+  .list,
+  a{
+    background-color: transparent !important;
+    border-color: transparent;
+    color: #fff;
+  }
+  
+  .bg-menu .item {
+    border-bottom: 1px solid #333 !important;
+  }
+  
+  .bg-menu p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: cursive;
+    line-height: 1.5;
+  }
+  .bg-menu p strong {
+    color: #0079e2;
+    font-size: 25px;
+  }
+  
+  /*====== auth ======*/
+  .auth__logo {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .auth .list {
+    margin-top: 50px;
+  }
+  
+  .auth button,
+  .button-success {
+    width: 100%;
+    background-color: #00243e !important;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .button-success {
+    margin-top: 25px !important;
+  }
+  
+  .code-qr {
+    height: 300px;
+    margin: 20px auto 0 auto;
+  }
+  .code-qr:before {
+    content: "";
+    background-image: url("../img/left.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 300px;
+  }
+  .code-qr:after {
+    content: "";
+    background-image: url("../img/right.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 300px;
+    right: 0;
+  }
+  
+  .code-qr .ion-ios-checkmark-empty, .ion-ios-close-empty{
+    font-size: 200px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+  }
+  
+  .code-qr .ion-ios-checkmark-empty {
+    color: green;
+  }
+  .code-qr .ion-ios-close-empty {
+    color: red;
+  }
+  .check-success,
+  .check-error{
+    text-align: center;
+    padding-top: 25px;
+  }
+  
+  .code-number {
+    border: 1px solid #666;
+  }
+  
+  .check-number .ion-ios-checkmark-empty,
+  .check-number .ion-ios-close-empty {
+    font-size: 200px;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 40px;
+  }
+  
+  .check-number .ion-ios-checkmark-empty {
+    color: green;
+  }
+  .check-number .ion-ios-close-empty {
+    color: red;
+  }
+  
+  .history .list .item{
+    border-bottom: 1px solid #666;
+  }
+  
+  .profile-name,
+  .profile-number-user{
+    text-align: center;
+  }
+  
+  .profile-name {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  
+  .profile-number-user{
+    margin-top: 25px;
+  }
+  
